@@ -1,258 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me</title>
-  <style>
-    html{
-      background:#030628;
-      text-align:center;
-      color:white;
-    }
-    .nav-bar a {
-      text-decoration: none;
-      color: black;
-      display: block;
-      border-radius: 5px;
-      line-height: 10px;
-    }
-    .nav-bar > ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-bar > ul > li > a {
-      padding: 10px;
-      background: lightgrey;
-    }
-    .nav-bar > ul > li > a:hover {
-      background: #07155E;
-      color: #F8F9F9;
-    }
-    .nav-bar .active {
-      background: #2204DB;
-      color: #f8f9f9;
-    }
-    .nav-bar > ul > li {
-      float: left;
-      width: 33%;
-      text-align: center;
-      height: 10px;
-    }
-    .div1 {
-      float: left;
-      width: 47%;
-      margin: 2px;
-      height: 200px;
-    }
-    .div2 {
-      width: 45%;
-      height: 200px;
-      margin: 3px;
-      border-radius: 4px;
-      text-align: center;
-      padding: 1px;
-      float: right;
-    }
-    .div3 {
-      float: left;
-      width: 46%;
-      border: 1px solid #FF;
-      margin: 5px;
-      text-align: center;
-      height: 200px;
-      background: #0F0C2B;
-      border-radius: 10px;
-      font-size: 17px;
-    }
-    .div4 {
-      float: right;
-      width: 46%;
-      margin: 5px;
-      text-align: center;
-      height: 200px;
-      background: #0C082C;
-      border-radius: 10px;
-      font-size: 17px;
-    }
-    .div5 {
-      width: 98%;
-      height: 210px;
-      margin: 3px;
-    }
-    .div6 {
-      height: 150px;
-      width: 98%;
-      border-radius: 5px;
-      font-size: 20px;
-      color: #FFFFFF;
-    }
-    .div7 {
-      height: 100px;
-      float: left;
-      width: 15%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #FFFFFF;
-      margin: 0px;
-    }
-    .div8 {
-      height: 100px;
-      float: left;
-      width: 17%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #FFFFFF;
-    }
-    .div9 {
-      height: 100px;
-      float: left;
-      width: 17%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #FFFFFF;
-    }
-    .div10 {
-      height: 100px;
-      float: left;
-      width: 17%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #FFFFFF;
-    }
-    .div11 {
-      height: 100px;
-      float: left;
-      width: 17%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #FFFFFF;
-    }
-    .div12 {
-      height: 100px;
-      float: left;
-      width: 17%;
-      border-radius: 5px;
-      font-size: 12px;
-      color: white;
-    }
-    .div13 {
-      height: 90px;
-      width: 98%;
-      border-radius: 5px;
-      font-size: 5px;
-      color: #FFFFFF;
-    }
-    header {
-      border-radius: 5px;
-    }
-    .div14 {
-      height: 90px;
-      width: 359px;
-      border-radius: 5px;
-      font-size: 5px;
-      color: #FFFFFF;
-    }
-    button {
-      height: 30px;
-      width: 180px;
-      background: #3506F3;
-      border-radius: 5px;
-    }
-    images{
-      border-radius:5px;
-    }
-      
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      box-shadow:#E900B7;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .whatsapp-button:hover {
-      background-color: #20b358;
-    }
-    
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>Portfolio..</title>
 </head>
+
 <body>
-  <div class="nav-bar">
+  <i class="uil uil-angle-up up"></i>
+  <header>
+    <h2>Portfolio..</h2>
     <ul>
-      <li><a href="index.html"class="active">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contacts</a></li>
+      <li><a href="#home" id="nav1">Home</a></li>
+      <li><a href="#services" id="nav2">Services</a></li>
+      <li><a href="#skills" id="nav3">Skills</a></li>
+      <li><a href="#contact" id="nav4">Contact</a></li>
+      <li>
+        <div class="switch">
+          <div class="switchcircle">
+            <ion-icon name="moon-outline"></ion-icon>
+          </div>
+        </div>
+      </li>
     </ul>
-  </div>
-  
-  <h1 style="color:#070327">.</h1>
-  
-  <div class="container">
-    <div class="div1">
-      <img src="/1736676916052.jpg" alt="Profile Picture" width="160px" height="200px" style="border-radius:5px;margin:1px;float:left"/>
+    <i class="uil uil-bars menu"></i>
+  </header>
+  <section id="home">
+    <div class="left">
+      <span>Hello, I'm Vikie_Qariz</span>
+      <h3>Web Developer</h3>
+      <span class="des">I Develop And Design WebSites.</span>
+      <button><a href="#skills">Veiw My Skills</a></button>
     </div>
-    <div class="div2">
-      <h2 style="color:#00FF38;margin:2px">Vikie_Qariz</h2>
-      <h2>I'm a Website Developer</h2>
-      <h3>Welcome to my portfolio</h3>
-      <p>Jovian Tech</p>
+    <div class="right">
+      <img src="portimg.svg">
     </div>
-  </div>
-  <br/>
-  <h2 style="color:#070327">About Me</h2>
-  <div class="div3">
-    <h2 style="margin:2px;color:#00FF38">Experience:</h2>
-    <h3>Intermediate<br/><br/>Frontend Development<br/><br/>Backend Development</h3>
-  </div>
-  <div class="div4">
-    <h2 style="color:#00FF38;margin:2px">Services:</h2>
-    <h3>Personal Blog Websites<br/><br/>Business Websites<br/><br/>Landing Sites</h3>
-  </div>
-  <div class="div5"></div>
-  <br/>
-  <div class="div6">
-    <h4 style="margin:5px">As a passinate Fullstack Developer, I specialize in creating seamless and dynamic web applications. With a solid foundation in both front-end and back-end technologies, I am adept at transforming complex requirements into intuitive and user-friendly solutions.</h4>
-  </div>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <h1 style="color:#00FF38"></h1>
-  <h3 style="color:smokewhite">Front-end Development</h3>
-  <div class="div7">
-    <img src="download.png" alt="HTML" width="80%" height="60px"/>HTML
-  </div>
-  <div class="div8">
-    <img src="download (1).png" alt="CSS" width="80%" height="60px"/>CSS
-  </div>
-  <div class="div9">
-    <img src="download (2).png" alt="JavaScript" width="80%" height="60px"/>JavaScript
-  </div>
-  <div class="div10">
-    <img src="/download (3).jpeg" alt="React.js" width="80%" height="60px"/>React.js
-  </div>
-  <div class="div11">
-    <img src="/images (1).png" alt="Vue.js" width="80%" height="60px" />Vue.js
-  </div>
-  <div class="div12">
-    <img src="/download.jpeg" alt="Angular.js" width="80%" height="60px"/>Angular.js
-  </div>
-  <div/>
+    <h1 class="bgtitle">Portfolio..</h1>
+    <h1 class="ya">YA</h1>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </section>
+  <section id="services">
+    <h1 class="title">Services</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-html5" class="html"></ion-icon>
+        <h3>Web Development</h3>
+        <p>Web Development Is Very Important In Our Time!!<br>I Develop Websites.</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-css3" class="css"></ion-icon>
+        <h3>Web Design</h3>
+        <p>Developing Websites Needs To CSS For Design!!<br>CSS Is Really Important.</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-javascript" class="js"></ion-icon>
+        <h3>Web Applications</h3>
+        <p>For Make Web Application You Need To JavaScript!!<br>JavaScript Is Important For Web Applications.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h1 class="title">Skills</h1>
+    <div class="content">
+      <div class="skills">
+        <div class="skill">
+          <span class="htmlbar">HTML</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar1"></div>
+        </div>
+        <div class="skill">
+          <span class="cssbar">CSS</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar2"></div>
+        </div>
+        <div class="skill">
+          <span class="jsbar">JavaScript</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar3"></div>
+        </div>
+      </div>
+      <div class="para">
+        <h3>My Skills!!</h3>
+        <p>My Html Is Perfect From My Point Of View.<br>And My Css Is Good But Not Perfect.<br>My JavaScript Is normal.</p>
+      </div>
+    </div>
+    <h1 class="bgskill">Skills</h1>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="cards">
+      <div class="card">
+        <ion-icon name="call-outline"></ion-icon>
+        <h3>Phone</h3>
+        <p>0742357499</p>
+      </div>
+      <div class="card">
+        <ion-icon name="mail-outline"></ion-icon>
+        <h3>Email</h3>
+        <p>vikieqariz@gmail.com</p>
+      </div>
+    </div>
 
-  <section>
-    
-<section/>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm%20interested%20in%20hiring%20you" class="whatsapp-button">
+        Hire Me
+    </a>
 
-    <a href="https://api.whatsapp.com/send?phone=0742357499&text=I'm%20interested%20in%20hiring%20you" class="whatsapp-button">Hire Me</a>
-
-</html>
+  </section>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"></script>
 </body>
-  </html
+
+            </html
