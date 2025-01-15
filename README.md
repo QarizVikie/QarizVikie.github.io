@@ -1,1 +1,0 @@
-# QarizVikie.github.io
