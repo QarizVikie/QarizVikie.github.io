@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Card with Clickable Descriptions</title>
+    <style>
+        .card {
+            margin-top:0px;
+            padding-top:0px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            width: 100%;
+            height: 0px /* Adjust height to fit content */
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+        }
+        .image-container img {
+            width: 100%;
+            height: 120px; /* Adjust height as needed */
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .image-container p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #333;
+        }
+             iframe {
+      width: 100%;
+      height:3000px; /* Adjust height as needed */
+      margin:0;
+     padding:0;
+      border: none;
+    }
+    .image-container:hover {
+      transform: scale(1.05); /* Slightly enlarge on hover */
+      transition: transform 0.2s ease;
+  }        
+     iframe {
+      width: 100%;
+      height:2650px; /* Adjust height as needed */
+      margin:0;
+     padding:0;
+      border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+     <a href="page4.html" class="image-container">
+            <img src="/IMG-20250219-WA0030.jpg" alt="Image 1">
+            <p>Modern dinning tables</p>
+        </a>
+        <a href="page2.html" class="image-container">
+            <img src="/IMG-20250219-WA0005.jpg" alt="Image 2">
+            <p>TV stands</p>
+        </a>
+        <a class="image-container" </page3>
+            <img src="/IMG-20250221-WA0001.jpg"
+            alt="Image 3">
+            <p>Beds</p>
+        </a>
+        <a  class="image-container">
+            <img src="/IMG-20250219-WA0008.jpg" alt="Image 4">
+            <p>Coffee tables</p>
+        </a>
+    </div>
+     <iframe src="page0.html"></iframe>
+</body>
+</html>￼Enter
