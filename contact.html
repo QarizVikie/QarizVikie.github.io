@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        /* Main Content */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .contact-form textarea {
+            width: 100%;
+            height: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #211949;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0B1E84;
+        }
+
+        /* Photo and Social Media Section */
+        .photo-social {
+            flex: 1;
+            text-align: center;
+        }
+
+        .photo-social img {
+            width: 100%;
+            height:150px;
+            max-width: 500px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #555;
+        }
+
+        /* Footer Navigation */
+        footer {
+            background-color: #040C30A3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+ 
+
+    <!-- Main Content -->
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Photo and Social Media Section -->
+        <div class="photo-social">
+            <img src="/1740156194207.jpg" alt="Business Location">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>&nbsp;&nbsp;
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2025 WAVE INTERIORS. All rights reserved.</p>
+    </footer>
+</body>
+  </html
