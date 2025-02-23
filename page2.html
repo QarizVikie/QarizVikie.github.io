@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0076ff;
+            --hover-color: #005bb5;
+            --text-color: #333;
+            --active-text-color: white;
+            --background-color: #f8f9fa;
+            --container-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--container-bg);
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        /* Pagination Styling */
+        .pagination-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pagination {
+            display: inline-flex;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pagination a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 10px 16px;
+            border: 1px solid var(--primary-color);
+            border-radius: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .pagination a:hover {
+            background: var(--primary-color);
+            color: var(--active-text-color);
+        }
+
+        .pagination .active {
+            background: var(--primary-color);
+            color: var(--active-text-color);
+        }
+
+        /* Large Image Styling */
+        .large-image-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .large-image {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .large-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Description Styling */
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Gallery Styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Add to Cart Button */
+        .add-to-cart-btn {
+            font-family: 'Oswald', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+           margin-bottom: 10px;
+            color: #fff;
+            background-color: #0C3190;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #ff4a3d;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .add-to-cart-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .large-image {
+                height: 200px;
+            }
+
+            .gallery img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Pagination Above -->
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li><a href="page5.html" aria-label="Previous" id="prev">⟨</a></li>
+            
+                <li><a href="page2.html"class="active" data-page="2">2</a></li>
+                <li><a href="page3.html" data-page="3">3</a></li>
+                <li><a href="page4.html" data-page="4">4</a></li>
+                <li><a href="page5.html" data-page="5">5</a></li>
+                <li><a href="page3.html" aria-label="Next" id="next">⟩</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content">
+            <!-- Page 1 Content -->
+            <div id="page-2" class="page">
+                <div class="description">
+                    <h3>DINNING TABLES KES 65000</h3>
+                    <button class="add-to-cart-btn" onclick="addToCart(2)">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-text">WhatsApp Order</span>
+                    </button>
+                </div>
+                <div class="large-image-container">
+                    <img src="/IMG-20250219-WA0022.jpg" alt="Large Image 1" class="large-image">
+                </div>
+                <div class="gallery">
+                    <img src="/IMG-20250219-WA0018.jpg" alt="Small Image 1">
+                    <img src="/IMG-20250219-WA0021.jpg" alt="Small Image 2">
+                    <img src="/IMG-20250219-WA0020.jpg" alt="Small Image 3">
+                    <img src="/IMG-20250219-WA0022.jpg" alt="Small Image 4">
+                </div>
+            </div>
+
+            <!-- Page 2 Content -->
+            <div id="page-2" class="page" style="display: none;">
+                <div class="description">
+                    <h3>DINNING TABLES KES 75000</h3>
+                    <button class="add-to-cart-btn" onclick="addToCart(3)">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-text">WhatsApp Order</span>
+                    </button>
+                </div>
+                <div class="large-image-container">
+                    <img src="/IMG-20250219-WA0023.jpg" alt="Large Image 2" class="large-image">
+                </div>
+                <div class="gallery">
+                    <img src="/IMG-20250219-WA0024.jpg" alt="Small Image 5">
+                    <img src="/IMG-20250219-WA0025.jpg" alt="Small Image 6">
+                    <img src="/IMG-20250219-WA0026.jpg" alt="Small Image 7">
+                    <img src="/IMG-20250219-WA0027.jpg" alt="Small Image 8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Pagination Functionality
+        const pages = document.querySelectorAll('.page');
+        const paginationLinks = document.querySelectorAll('.pagination a[data-page]');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentPage = 1;
+
+        // Function to show a specific page
+        function showPage(pageNumber) {
+            pages.forEach(page => page.style.display = 'none');
+            document..
+            (`page-${pageNumber}`).style.display = 'block';
+            paginationLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector(`.pagination a[data-page="${pageNumber}"]`).classList.add('active');
+            currentPage = pageNumber;
+        }
+
+        // Event listeners for pagination links
+        paginationLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageNumber = e.target.getAttribute('data-page');
+                showPage(pageNumber);
+            });
+        });
+
+        // Event listener for "Previous" button
+        prevButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        });
+
+        // Event listener for "Next" button
+        nextButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage < pages.length) {
+                showPage(currentPage + 1);
+            }
+        });
+
+        // Show the first page by default
+        showPage(1);
+    </script>
+</body>
+</html>
