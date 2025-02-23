@@ -1,1 +1,317 @@
-i
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>QARIZ WEB SOLUTIONS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lavanderia&family=Great+Vibes&family=Alex+Brush&family=Playlist&family=Rouge+Script&family=Tangerine&family=Sacramento&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font Oswald -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Oswald', sans-serif;
+      background:#BBBCC626;
+      color:#070B3382;
+    }
+    .div1 {
+  color: #CB09D0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 22px;
+  height: 290px;
+  margin-top: 1px;
+  background-image: url('/Modern Design Funiture Instagram Post Template_20250221_174923_0000.png');
+  background-size: cover; /* This ensures the image covers the entire div without overflow */
+  background-position: center; /* This centers the image within the div */
+  
+}
+    h4 {
+      margin: 0;
+      
+      padding: 10px; /* You can adjust the padding value if needed */
+      font-size: 20px; /* Adjust font size to match icons */
+    }
+    .icon-container {
+      gap: 10px;
+      justify-items: center; /* Align items vertically */
+      
+    }
+    .icon, .menu-icon {
+      font-size: 20px;
+      cursor: pointer;
+      margin-top:20px;
+      color: #7A00FF; /* Set all icons to white */
+    }
+    .sidenav {
+      height: 60%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      left: 0;
+      background-color: #000000F2;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 10px;
+     border-bottom-right-radius:3px;
+     
+    }
+
+    .sidenav a {
+    
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      top:0px;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0px;
+      right: 25px;
+      font-size: 34px;
+      margin-left: 50px;
+      
+    }
+
+    @media screen and (max-height: 350px) {
+      .sidenav {padding-top: 1px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .div3 {
+      height:400px;
+      width:100%;
+      background:#070B33;
+    }
+    
+    .social-button {
+      width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+    float:left;
+    margin-top:50px;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.social-button img {
+    width: 24px;
+    height: 24px;
+}
+
+    /* Container for the image slider */
+        .slider{
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 0px solid #ddd;
+        }
+
+        /* Container for the slides */
+        .slides{
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+        }
+
+        /* Individual slide images */
+        .slides img {
+            width: 100%;
+            flex-shrink: 0;
+            height:320px;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            position: absolute;
+            top: 20%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: px;
+            cursor: pointer;
+            border-radius: 10%;
+            text-align: center;
+            font-family: 'rouge script', cursive;
+            border-top-right-radius: 2px;
+            border-top-left-radius:2px;
+            font-size:23px;
+            font-weight:18px;
+}
+        }
+
+        .prev {
+            
+        }
+
+        .next {
+            
+          
+        }
+
+          
+    .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-button img {
+    margin-right: 10px;
+}    
+.container {
+      display: flex;
+      flex-direction: column; /* Stacks columns vertically */
+      align-items: stretch; /* Ensures columns are of equal width */
+    }
+     iframe {
+      width: 100%;
+      height:4000px; /* Adjust height as needed */
+      margin:0;
+     padding:0;
+      border: none;
+    }
+   </style>
+</head>
+<body>
+  <div class="div1">
+    <div class="icon-container">
+      <span class="menu-icon" onclick="openNav()">&#9776;</span> 
+     
+    </div>
+    
+    <div class="icon-container">
+      <i class="fas fa-shopping-bag re icon"></i>&nbsp;&nbsp;&nbsp;</br>
+      <i class="fab fa-whatsapp icon"></i>
+      </br>
+            <i class="fas fa-heart icon"></i> <!-- Love icon -->
+    </div>
+  </div>
+   <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24">
+        Chat with us
+    </a>
+<h5 style="margin-top:0px;text-align:center; background:yellow;color:black; ">WRAP YOURSELF IN LUXURY</h5>
+<div class="slider">
+    <div class="slides">
+       
+        <img src="/IMG-20250221-WA0012.jpg" alt="Image 3">
+        <img src="/IMG-20250219-WA0051.jpg" alt="Image 4">
+        <img src="/IMG-20250219-WA0049.jpg" alt="Image 5">
+        <img src="/IMG-20250220-WA0001.jpg" alt="Image 1">  
+        <img src="/IMG-20250218-WA0100.jpg" alt="Image 6">
+        </div>
+
+    
+    <button class="next" onclick="changeSlide(1)"&#10095; <h5>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    Elevate your home with our exquisite furniture. Shop with us for quality, elegance, and timeless pieces that transform your living space into a haven. Enjoy exclusive offers and unparalleled customer service. Make your home a masterpiece with our furniture today!</h4></button>
+</div>
+</div>
+  <h4 style="text-align:center">SHOP BY CATEGORY</h4>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="page2.html">shop by category</a>
+    <a href="#">home</a>
+    <a href="games.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="moderndinningtable.html">TV STANDS</a>
+    <a href="games.html">Shoe racks </a>
+     <a href="bed.html"> beds</a>
+    <a href="tvstands.html">console tables</a>
+    <a href="dinning.html">Dinning tables</a>
+    <a href="dekkerbeds.html">Dressing mirrors</a>
+    <a href="slider.html">Our store</a>
+    <a href="armchairs.html">Arm chair</a>
+    <a href="games.html">Modern stools</a>
+  </div>
+     
+</Body>
+  <script>
+ 
+  
+
+        let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+    const slider = document.querySelector('.slides');
+
+    function changeSlide(direction) {
+        if (direction === 1 && currentSlide === totalSlides - 2) {
+            currentSlide = -1; // Prepare to reset to the first image
+        }
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        slider.style.transition = 'transform 0.5s ease-in-out';
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        if (direction === 1 && currentSlide === -1) {
+            setTimeout(() => {
+                slider.style.transition = 'none';
+                slider.style.transform = `translateX(0)`;
+                currentSlide = 0;
+            }, 500); // Match the transition duration
+        }
+    }
+
+    function autoSlide() {
+        changeSlide(1);
+        setTimeout(autoSlide, 22000); // Change image every 3 seconds
+    }
+
+    autoSlide();
+    
+function openNav() {
+  document.getElementById("mySidenav").style.width = "170px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+  </script>
+             <iframe src="games.html"></iframe>
+</div>
+<div class="second-page">
+    <!-- Second page content here -->
+</div>
+</body>
+</html>
+
+     
+
