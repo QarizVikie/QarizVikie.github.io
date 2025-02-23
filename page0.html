@@ -206,7 +206,7 @@
             font-size: 28px;
         }
 
-        .cart-count {
+       .cart-count {
             position: fixed;
             top: 25px;
             right: 25px;
@@ -336,11 +336,12 @@
             </button>
         </div>
     </div>
-
+<a href="page2.html"
     <button class="cart-button" onclick="goToCartPage()">
         <i class="fas fa-cart-shopping">🛒</i>
         <span class="cart-count">0</span> <!-- Replace with dynamic count -->
     </button>
+    </a>
 
     <script>
         const sliderIndices = {
@@ -358,24 +359,18 @@
             slider.style.transform = `translateX(${offset}%)`;
         }
 
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
         function addToCart(itemId) {
             const item = document.querySelector(`.item[data-id="${itemId}"]`);
             const itemName = item.getAttribute('data-name');
-            const itemPrice = parseFloat(item.getAttribute('data-price'));
+            const itemPrice = item.getAttribute('data-price');
 
-            const existingItem = cart.find((i) => i.id === itemId);
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({ id: itemId, name: itemName, price: itemPrice, quantity: 1 });
-            }
+            const message = `I would like to buy ${itemName} for ${itemPrice}. Is it available?`;
+            const whatsappUrl = `https://wa.me//+254740616414?text=${encodeURIComponent(message)}`;  // Replace 1234567890 with your WhatsApp number
 
-            localStorage.setItem('cart', JSON.stringify(cart));
-            updateCartCount();
-            alert(`${itemName} added to cart!`);
+            window.open(whatsappUrl, '_blank');
         }
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         function updateCartCount() {
             const cartCountElement = document.querySelector('.cart-count');
@@ -393,4 +388,4 @@
 
     <iframe src="slider.html"></iframe>
 </body>
-  </html
+    </html>
